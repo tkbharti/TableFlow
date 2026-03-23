@@ -1,4 +1,4 @@
-# TableFlow
+# DragDropTableFlow
 Drag Drop Feature Between Tables Using SQLite
 
 To start the app use following command -> Go to App directory
