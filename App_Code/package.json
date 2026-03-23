@@ -1,0 +1,60 @@
+{
+  "name": "neodragdrop",
+  "version": "1.0.0",
+  "description": "drag drop feature",
+  "homepage": "./",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.NeoTableFlow.app",
+    "productName": "NeoTableFlowApp",
+    "asar": true,
+    "files": [
+      "build/**/*",
+      "public/**/*",
+      "assets/icon.ico",
+      "index.js",
+      "config/**/*",
+      "helpers/**/*",
+      "routes/**/*",
+      "controllers/**/*",
+      "models/**/*",
+      "log/**/*",
+      "db/**/*",
+      "package.json",
+      "userData/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.2.2",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "electron-is-dev": "^3.0.1",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^8.1.0",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.14",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron": "^40.1.0",
+    "electron-builder": "^26.7.0"
+  }
+}

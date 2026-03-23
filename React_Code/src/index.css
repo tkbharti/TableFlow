@@ -1,0 +1,478 @@
+:root {
+  --brand-color: #0d6efd;
+  --bg-light: #f8fafc;
+  --bg-dark: #121212;
+
+  
+  --custom-txt-color: #015a99; 
+
+  --custom-bg-bgcolor: #015a99;
+  --custom-bg-txtcolor: #FFF; 
+
+  --custom-btn-bgcolor: #015a99; 
+  --custom-btn-txtcolor: #FFF;   
+
+  --tabulator-header-bgcolor: #f2f2f2;
+  --tabulator-footer-bgcolor: #f2f2f2;
+  --tabulator-txtcolor:#000;
+
+
+}
+
+.btn.disabled {
+  color:grey;
+}
+
+.txt-custom {
+  color: var(--custom-txt-color)  !important;
+}
+
+.bg-custom {
+  background-color: var(--custom-bg-bgcolor) !important;
+  color:var(--custom-bg-txtcolor);
+}
+
+.btn-custom {
+  background-color:var(--custom-btn-bgcolor) !important;
+  color:var(--custom-btn-txtcolor);
+}
+ 
+
+body.theme-blue { --brand-color: #0d6efd; }
+body.theme-green { --brand-color: #16a34a; }
+body.theme-purple { --brand-color: #7c3aed; }
+body.theme-red { --brand-color: #ef4444; }
+
+body.light { background: var(--bg-light); color: #111827; }
+body.dark { background: var(--bg-dark); color: #e5e7eb; }
+
+.app-header { height: 50px; display:flex; align-items:center; padding:0 16px; }
+.app-footer { height: 30px; display:flex; align-items:center; justify-content:center; padding:0 16px; }
+.sidebar { height: calc(100vh - 100px); overflow:auto; }
+.sidebar .nav-link { color: inherit; }
+.brand { display:flex; align-items:center; gap:8px; }
+.brand img { width:32px; height:32px; }
+.bg-brand { background-color: var(--brand-color) !important; color: #fff !important; }
+
+.modal-dialog{
+margin-top: 10%; 
+
+} 
+
+.dashboard-container {
+  display: flex;
+  min-height: 70vh; 
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+   
+} 
+
+.card:hover { 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+label {
+ font-size:14px;	
+ text-align:left;
+} 
+ 
+.app-title {
+  font-size: 18px;
+  color: #2c3e50;
+} 
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    padding: 0px;  
+}
+
+ 
+.txt-primary {
+  color:#0d6efd !important; 
+}
+.bg-primary{
+  background-color: #0d6efd !important;
+  color:#FFF;
+}
+.btn-primary{
+  background-color: #0d6efd !important;
+  color:#FFF;
+}
+
+
+.txt-default{
+  color: #0f172aff !important;
+}  
+.bg-default{
+  background-color: #0f172aff !important; 
+  color:#FFF;
+} 
+.btn-default{
+  background-color: #0f172aff !important;
+  color:#FFF;
+}
+
+.txt-dark{
+  color: #1a6871 !important;
+}  
+.bg-dark{
+  background-color: #1a6871 !important;
+  color:#FFF;
+} 
+.btn-dark{
+  background-color: #1a6871 !important;
+  color:#FFF;
+}
+  
+.txt-secondary{
+  color: #6c757d !important;
+}  
+.bg-secondary{
+  background-color: #6c757d !important;
+  color:#FFF;
+} 
+.btn-secondary{
+  background-color: #6c757d !important;
+  color:#FFF;
+}
+
+.txt-info{
+  color: #115b6a !important;
+}  
+.bg-info{
+  background-color: #115b6a !important;
+  color:#fff;
+} 
+.btn-info{
+  background-color: #115b6a !important;
+  color:#fff;
+}
+ 
+ 
+
+.form-control {
+  border-color: #888;
+}
+
+.form-select {
+  border-color: #888;
+}
+
+.btn:hover {
+  color:#ebe9e9;
+}
+
+.txt-underline {
+  text-decoration: underline;
+  text-decoration-color: #15A5FF;
+  color:#FFF !important;
+} 
+
+.setting-btn {
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+
+
+.circle-icon {  
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    width: 18px;             /* Define a square size */
+    height: 18px;            /* Must be same as width for a perfect circle */
+    color: #fff;             /* Icon color */
+    border-radius: 50%;      /* Creates the circle */
+    font-size: 14px;         /* Adjust icon size as needed */
+}
+
+.tickerheader {
+    padding: 5px;
+    text-align: center; 
+    background-color:#e1e1e1;
+    font-weight: bold;
+}
+ 
+.tickerfooter {
+  padding: 2px;
+  text-align: right;
+  height:30px
+}
+
+.tickermainbody {
+    padding: 5px; 
+    margin-top: 0; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    min-height: 200px;  
+    /*overflow-y: auto;
+    overflow-x: hidden; */
+}
+
+
+.tickermainbodyDataFrame {
+    padding: 5px; 
+    margin-top: 0; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100px;
+}
+ 
+
+.header {
+    height: 30px;
+    border-bottom: 1px solid #EEE;
+    
+    height: 30px;
+    font-weight: bold;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.footer {
+    height: 40px; 
+    border-top: 1px solid #DDD;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.card {
+  background: #fff;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+  border-color:rgb(204 204 204 / 99%);  
+}
+
+.card2 {
+  background: #fff;
+  padding:5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+  border-color:rgb(204 204 204 / 99%);  
+}
+
+.list-view {
+  padding: 5px;
+  box-shadow: 5px 5px 1px 1px #0000;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+
+
+.tabulator-cell,
+.tabulator-cell * {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+.tabulator-cell.tabulator-row-handle .tabulator-row-handle-box .tabulator-row-handle-bar {
+  background:#000 !important
+}
+
+.tabulator .tabulator-footer .tabulator-page.active {
+  color:#000 !important
+}
+.tabulator {
+
+  background-color: #FFF !important;
+}
+
+.tabulator-row.tabulator-selectable:hover {
+  background-color: #e6e4e4 !important;
+}
+ 
+ 
+.tabulator .tabulator-header .tabulator-col	{
+   background-color: var( --tabulator-header-bgcolor) !important; 
+    color: var( --tabulator-txtcolor);
+}
+
+.tabulator .tabulator-footer {
+  background-color: var( --tabulator-footer-bgcolor) !important;  
+}
+ 
+.tabulator-cell {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: anywhere;
+  line-height: 1.3;
+}
+ 
+.tabulator-row.tabulator-group span {
+  color:#000;
+}
+
+
+
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 1px;
+  bottom: 1px; 
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2ab934; 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(25px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+}
+
+.on
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left:30%;
+  font-size: 9px;
+  font-family: Verdana, sans-serif;
+}
+
+.off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 70%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before { 
+  border-radius: 50%;}
+
+
+.button-container {
+  padding-top: 10px;
+  position: relative; /* Essential for positioning the badge */
+  display: inline-block; /* Ensures the container only takes up the space of its content */
+}
+
+.my-button {
+  padding: 0px 30px; 
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor:none;
+  background-color: #FFF;
+}
+
+.badge {
+  position: absolute;
+  top: -5px; /* Adjust to position the badge vertically */
+  right: -5px; /* Adjust to position the badge horizontally */ 
+  color: white;
+  border-radius: 5%; /* Makes the badge circular */
+  padding: 7px 7px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1; /* Ensures text is vertically centered */
+}
+
+.btn-close {
+  color:#FFF
+}
+
+
+.rotating-icon {
+  /* Ensure the icon is displayed as a block or inline-block for transform to work correctly */
+  display: inline-block; 
+  
+  /* Define the animation */
+  animation: spin 2s linear infinite; 
+}
+
+/* Define the keyframes for the rotation animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees (a full turn) */
+  }
+}
+
+.dragging-copy {
+  cursor: copy !important;
+}
