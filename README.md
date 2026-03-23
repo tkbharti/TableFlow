@@ -1,5 +1,6 @@
 # Drag Drop - TableFlowApp
-Drag Drop Feature Between Tables Using SQLite
+Drag Drop Feature Between Tables Using React,Node,SQLite
+Node js and React js based application, which support Drag Drop Feature Between Tables.
 
 To start the app use following command -> Go to App directory
 
